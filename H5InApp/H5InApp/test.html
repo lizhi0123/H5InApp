@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>H5内显示页面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<style type="text/css" >
+    
+</style>
+
+ <script language="javascript">
+  function  backClick(){
+<!--     alert("返回点击了");-->
+     window.webkit.messageHandlers.BackToLastPage.postMessage(null);
+  }
+</script>
+<body>
+        <div style="position: relative ;height: 40px;  left: 0px ;right: 0px; background-color: lightgray; line-height: 40px; vertical-align: middle; ">
+            <button type="button" style="left: 0px; width: 60px; top: 0px;  height: 40px; " type="button" ;  onclick="backClick()" >
+                返回
+            </button>
+            H5内显示页面Title
+        </div>
+    
+    详情页内容 ，具体情况，具体显示。
+
+</body>
+</html>
